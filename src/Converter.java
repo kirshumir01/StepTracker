@@ -1,5 +1,4 @@
 public class Converter {
-    // объявить переменные
     int distance;
     int calories;
 
@@ -8,12 +7,10 @@ public class Converter {
         this.calories = calories;
     }
 
-    // вывести пройденную дистанцию (км)
     public int calculateDistance(int stepsNumberSum) {
-        return stepsNumberSum * distance / 1000;
+        return stepsNumberSum * distance / 100000;
     }
 
-    // вывести количество сожженных калорий (ккал)
     public int calculateCalories(int stepsNumberSum) {
         return stepsNumberSum * calories / 1000;
     }
